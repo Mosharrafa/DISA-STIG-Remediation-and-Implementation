@@ -2,7 +2,7 @@
 
 ![STIG](https://img.shields.io/badge/STIG-Windows%2011%20V2R6-blue?style=flat-square&logo=windows)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)
-![Remediated](https://img.shields.io/badge/Remediated-3%20of%2020-orange?style=flat-square&logo=powershell)
+![Remediated](https://img.shields.io/badge/Remediated-9%20of%2020-orange?style=flat-square&logo=powershell)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2011%20Pro-0078D4?style=flat-square&logo=windows11)
 ![Scan Tool](https://img.shields.io/badge/Scan%20Tool-Tenable-00B388?style=flat-square)
 
@@ -50,12 +50,12 @@ Each STIG control is referenced against the **[STIG-A-View online viewer](https:
 | 1 | [WN11-AU-000500](scripts/WN11-AU-000500.ps1) | Application event log size must be ≥ 32768 KB | II | ✅ | Done |
 | 2 | [WN11-AU-000505](scripts/WN11-AU-000505.ps1) | Security event log size must be ≥ 1024000 KB | II | ✅ | Done |
 | 3 | [WN11-AU-000510](scripts/WN11-AU-000510.ps1) | System event log size must be ≥ 32768 KB | II | ✅ | Done |
-| 4 | WN11-AC-000005 | Account lockout duration must be ≥ 15 minutes | II | 🔲 | Pending |
-| 5 | WN11-AC-000010 | Bad logon attempts threshold must be ≤ 3 | II | 🔲 | Pending |
-| 6 | WN11-AC-000015 | Lockout counter reset must be 15 minutes | II | 🔲 | Pending |
-| 7 | WN11-AC-000020 | Password history must be 24 passwords remembered | II | 🔲 | Pending |
-| 8 | WN11-AC-000035 | Minimum password length must be 14 characters | II | 🔲 | Pending |
-| 9 | WN11-AC-000040 | Password complexity filter must be enabled | II | 🔲 | Pending |
+| 4 | [WN11-AC-000005](scripts/WN11-AC-000005.ps1) | Account lockout duration must be ≥ 15 minutes | II | ✅ | Done |
+| 5 | [WN11-AC-000010](scripts/WN11-AC-000010.ps1) | Bad logon attempts threshold must be ≤ 3 | II | ✅ | Done |
+| 6 | [WN11-AC-000015](scripts/WN11-AC-000015.ps1) | Lockout counter reset must be 15 minutes | II | ✅ | Done |
+| 7 | [WN11-AC-000020](scripts/WN11-AC-000020.ps1) | Password history must be 24 passwords remembered | II | ✅ | Done |
+| 8 | [WN11-AC-000035](scripts/WN11-AC-000035.ps1) | Minimum password length must be 14 characters | II | ✅ | Done |
+| 9 | [WN11-AC-000040](scripts/WN11-AC-000040.ps1) | Password complexity filter must be enabled | II | ✅ | Done |
 | 10 | WN11-00-000175 | Secondary Logon service must be disabled | II | 🔲 | Pending |
 | 11 | WN11-00-000135 | Host-based firewall must be installed and enabled | II | 🔲 | Pending |
 | 12 | WN11-00-000126 | Block consumer Microsoft account authentication | II | 🔲 | Pending |
@@ -81,6 +81,12 @@ DISA-STIG-Remediation-and-Implementation/
 │   ├── WN11-AU-000500.ps1    ✅ Application event log size
 │   ├── WN11-AU-000505.ps1    ✅ Security event log size
 │   ├── WN11-AU-000510.ps1    ✅ System event log size
+│   ├── WN11-AC-000005.ps1    ✅ Account lockout duration
+│   ├── WN11-AC-000010.ps1    ✅ Lockout threshold
+│   ├── WN11-AC-000015.ps1    ✅ Lockout reset window
+│   ├── WN11-AC-000020.ps1    ✅ Password history
+│   ├── WN11-AC-000035.ps1    ✅ Minimum password length
+│   ├── WN11-AC-000040.ps1    ✅ Password complexity
 │   └── ...                   🔲 More added as each is completed
 │
 └── 📂 scans/
